@@ -1,0 +1,136 @@
+#footer {
+
+    top: 217.4px;
+    /* padding: 12px; */
+
+}
+.container{
+    width: 100%;
+    /* min-height: 100vh; */
+    color: aliceblue;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    
+    padding: 0 12px 0 12px;
+    
+}
+
+.footer{
+
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 0;
+    padding-top: 8px;
+
+}
+
+
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: brown;
+}
+
+.footer .social a {
+    font-size: 20px;
+    color: rgb(82, 85, 84);
+    border: 2px solid yellow;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateX(-4px);
+    background-color: rgb(152, 148, 157);
+    color: rgb(0, 0, 255);
+
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: blue;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(234, 240, 234);
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid rgb(160, 174, 160);
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(252, 252, 252);
+}
+
+@media screen and (max-width:600px) {
+
+    #footer {
+
+        top: 207px;
+        
+    
+    }
+
+    
+}
+
+@media screen and (max-width:500px) {
+
+    #footer {
+
+        top: 286px;
+        
+    
+    }
+
+    
+}
+
+@media screen and (max-width:457px) {
+
+    #footer {
+
+        top: 378px;
+        
+    
+    }
+
+    
+}
+
+@media screen and (max-width:270px) {
+
+    .footer .social a:nth-child(4){
+        margin-top: 5px;
+    }
+
+    
+}

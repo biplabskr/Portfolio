@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+.Main-header {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    border-radius: 10px;
+    background-color: rgba(33, 30, 30, 0.751);
+    z-index: 10000;
+    margin: 3px 0px 0 0px ;
+    
+    
+ 
+}
+
+.Main-header .logo {
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: aliceblue;
+    letter-spacing: 1px;
+    /* font-family:cursive; */
+    cursor: pointer;
+    /* flex-shrink: 3; */
+}
+
+#Nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#Nav-menu li {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    
+}
+
+#Nav-menu li .Link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: aliceblue;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+#Nav-menu li .Link:hover,
+#Nav-menu li .Link.active {
+    color: aqua;
+}
+
+#Nav-menu li .Link:hover::after,
+#Nav-menu li .Link.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 12px;
+    left: 11px;
+
+}
+
+.Mobile {
+    display: none;
+}
+
+.Mobile i {
+
+    color: aliceblue;
+    font-size: 1.8rem;
+
+}
+
+@media screen and (max-width:769px) {
+
+    #Nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 108px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(21, 21, 21, 0.794);
+        box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.06);
+        padding: 30px 0 0 10px;
+        transition: 0.5s ease-in-out;
+
+    }
+
+    #Nav-menu.active {
+
+        right: 0px;
+
+    }
+
+    #Nav-menu li {
+        margin-bottom: 20px;
+    }
+
+    .Mobile {
+        display: block;
+    }
+
+    .Mobile li {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (width<300px) {
+
+    .Main-header {
+        justify-content: space-around;
+
+    }
+
+    #Nav-menu {
+        width: 190px;
+        ;
+    }
+
+
+
+}
+
+@media screen and (width<189px) {
+
+    .Main-header {
+        justify-content: space-around;
+
+    }
+
+    #Nav-menu {
+        width: 120px;
+    }
+
+    #Nav-menu li {
+        padding: 5px;
+    }
+
+    #Nav-menu li .Link:hover::after,
+    #Nav-menu li .Link.active::after {
+        
+        bottom: 7px;
+        left: 7px;
+
+    }
+
+    .Main-header .logo{
+        font-size: 3px;
+    }
+
+
+
+}
